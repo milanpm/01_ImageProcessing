@@ -1,84 +1,30 @@
 # 01_ImageProcessing
 
-> Practical Image Processing for Machine Vision and Industrial Inspection
+Python과 OpenCV를 이용한 영상처리 학습 저장소입니다.
 
----
+## 목표
 
-## Overview
+- 영상처리 기초 학습
+- OpenCV 실습 코드 정리
+- GitHub 포트폴리오 구축
+- Machine Vision / AI Vision 역량 강화
 
-This repository documents practical image processing techniques for industrial machine vision applications.
+## 현재 예제
 
-The focus is not only on learning OpenCV, but also on understanding how image processing algorithms are applied to real inspection systems.
+| 파일 | 설명 |
+|---|---|
+| examples/01_image_basic.py | 이미지 읽기 및 기본 정보 확인 |
+| examples/02_grayscale.py | 컬러 이미지를 Grayscale로 변환 |
+| examples/03_blur_threshold.py | Blur 처리 후 Threshold 적용 |
 
----
+## 실행 방법
 
-## Objectives
+    python examples/03_blur_threshold.py
 
-* Learn image processing from fundamentals to advanced topics
-* Build reusable image processing modules
-* Apply image processing techniques to industrial inspection
-* Prepare for AI-based vision systems
+## 필요 라이브러리
 
----
+    pip install opencv-python
 
-## Repository Structure
+## Author
 
-```text
-01_ImageProcessing
-│
-├── docs/
-├── datasets/
-├── images/
-├── notebooks/
-├── examples/
-├── projects/
-├── src/
-└── tests/
-```
-
----
-
-## Learning Roadmap
-
-| Chapter | Topic                 | Status |
-| ------- | --------------------- | ------ |
-| 01      | Image Basics          | ⏳      |
-| 02      | Color Space           | ⏳      |
-| 03      | Histogram             | ⏳      |
-| 04      | Filtering             | ⏳      |
-| 05      | Threshold             | ⏳      |
-| 06      | Morphology            | ⏳      |
-| 07      | Edge Detection        | ⏳      |
-| 08      | Contour               | ⏳      |
-| 09      | Feature Detection     | ⏳      |
-| 10      | Geometric Transform   | ⏳      |
-| 11      | Template Matching     | ⏳      |
-| 12      | Camera Calibration    | ⏳      |
-| 13      | Perspective Transform | ⏳      |
-| 14      | Frequency Domain      | ⏳      |
-| 15      | Segmentation          | ⏳      |
-| 16      | Mini Projects         | ⏳      |
-
----
-
-## Development Environment
-
-* Python
-* OpenCV
-* NumPy
-* Matplotlib
-
----
-
-## Future Plans
-
-* Industrial Vision Examples
-* Medical Image Processing
-* NIR Image Processing
-* AI Vision Integration
-
----
-
-## License
-
-MIT License
+Alex
