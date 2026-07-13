@@ -53,7 +53,7 @@
 | 01_Image_Basics | Image Load / Image Information / Image Save |
 | 02_Color_Space | RGB to Grayscale |
 | 03_Histogram | Histogram Visualization |
-| 04_Filtering | Blur Filtering |
+| 04_Filtering | Average Blur / Gaussian Blur |
 
 ---
 
@@ -88,7 +88,8 @@ python examples/01_Image_Basics/src/01_image_load.py
 - [x] Image Save
 - [x] Color Space
 - [x] Histogram
-- [x] Blur
+- [x] Average Blur
+- [x] Gaussian Blur
 
 Upcoming
 
