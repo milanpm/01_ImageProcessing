@@ -34,7 +34,8 @@
 │   ├── 01_Image_Basics
 │   ├── 02_Color_Space
 │   ├── 03_Histogram
-│   └── 04_Filtering
+│   ├── 04_Filtering
+│   └── 05_Threshold
 │
 ├── images              # Sample Images
 ├── notebooks           # Jupyter Notebook
@@ -54,6 +55,7 @@
 | 02_Color_Space | RGB to Grayscale |
 | 03_Histogram | Histogram Visualization |
 | 04_Filtering | Average Blur / Gaussian Blur |
+| 05_Threshold | Binary Threshold |
 
 ---
 
@@ -90,10 +92,10 @@ python examples/01_Image_Basics/src/01_image_load.py
 - [x] Histogram
 - [x] Average Blur
 - [x] Gaussian Blur
+- [x] Threshold
 
 Upcoming
 
-- [ ] Threshold
 - [ ] Morphology
 - [ ] Edge Detection
 - [ ] Contours
