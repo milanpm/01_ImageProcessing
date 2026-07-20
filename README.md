@@ -93,10 +93,10 @@ python examples/01_Image_Basics/src/01_image_load.py
 - [x] Average Blur
 - [x] Gaussian Blur
 - [x] Threshold
+- [x] Morphology
 
 Upcoming
 
-- [ ] Morphology
 - [ ] Edge Detection
 - [ ] Contours
 - [ ] Hough Transform
