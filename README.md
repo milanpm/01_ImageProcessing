@@ -1,104 +1,102 @@
 # 01_ImageProcessing
 
-> Python과 OpenCV를 이용한 Digital Image Processing 학습 및 Machine Vision 포트폴리오 프로젝트
+> A hands-on Digital Image Processing and Machine Vision portfolio project built with Python and OpenCV.
 
 ---
 
-# Project Overview
+## Project Overview
 
-이 저장소는 Python과 OpenCV를 이용하여 영상처리(Image Processing)의 기초부터 Machine Vision까지 단계적으로 학습하기 위한 프로젝트입니다.
+This repository documents a step-by-step journey from the fundamentals of image processing to practical Machine Vision applications using Python and OpenCV.
 
-본 프로젝트의 목표는 단순한 예제 코드 작성이 아니라, 실제 산업 현장에서 활용 가능한 영상처리 기술을 체계적으로 학습하고 GitHub 포트폴리오를 구축하는 것입니다.
+The goal is not only to write example code, but also to build a structured understanding of techniques that can be applied in real industrial environments while developing a professional GitHub portfolio.
 
----
+## Project Goals
 
-# Project Goals
+- Learn image processing with Python
+- Build practical experience with OpenCV
+- Understand the fundamentals of Digital Image Processing
+- Develop Machine Vision engineering skills
+- Establish a foundation for AI Vision projects
+- Build a well-organized GitHub portfolio
 
-- Python 기반 영상처리 학습
-- OpenCV 라이브러리 활용
-- Digital Image Processing 기초 습득
-- Machine Vision 기술 역량 강화
-- AI Vision 프로젝트 기반 구축
-- GitHub Portfolio 제작
+## Repository Structure
 
----
-
-# Repository Structure
-
-```
-01_ImageProcessing
-│
-├── datasets            # Dataset
-├── docs                # Documents
-├── examples            # OpenCV Examples
-│   ├── 01_Image_Basics
-│   ├── 02_Color_Space
-│   ├── 03_Histogram
-│   ├── 04_Filtering
-│   └── 05_Threshold
-│
-├── images              # Sample Images
-├── notebooks           # Jupyter Notebook
-├── projects            # Mini Projects
-├── scripts             # Utility Scripts
-├── src                 # Common Modules
-└── tests               # Test Codes
+```text
+01_ImageProcessing/
+├── datasets/               # Datasets
+├── docs/                   # Documentation
+├── examples/               # OpenCV examples organized by chapter
+│   ├── 01_Image_Basics/
+│   ├── 02_Color_Space/
+│   ├── 03_Histogram/
+│   ├── 04_Filtering/
+│   ├── 05_Threshold/
+│   ├── 06_Morphology/
+│   ├── 07_Edge_Detection/
+│   └── 08_Contours/
+├── images/                 # Sample images
+├── notebooks/              # Jupyter notebooks
+├── projects/               # Mini projects
+├── scripts/                # Utility scripts
+├── src/                    # Shared modules
+└── tests/                  # Test code
 ```
 
----
+## Current Examples
 
-# Current Examples
+| Chapter | Topics |
+|---|---|
+| `01_Image_Basics` | Image loading, image information, and image saving |
+| `02_Color_Space` | Color-space conversion and grayscale images |
+| `03_Histogram` | Histogram calculation and visualization |
+| `04_Filtering` | Average blur and Gaussian blur |
+| `05_Threshold` | Binary thresholding |
+| `06_Morphology` | Morphological image operations |
+| `07_Edge_Detection` | Edge detection techniques |
+| `08_Contours` | Contour detection, area, perimeter, approximation, centroid, and hierarchy |
 
-| Chapter | Description |
-|----------|-------------|
-| 01_Image_Basics | Image Load / Image Information / Image Save |
-| 02_Color_Space | RGB to Grayscale |
-| 03_Histogram | Histogram Visualization |
-| 04_Filtering | Average Blur / Gaussian Blur |
-| 05_Threshold | Binary Threshold |
-
----
-
-# Development Environment
+## Development Environment
 
 - Python 3.x
 - OpenCV
 - NumPy
+- Matplotlib
 
-Install packages
+## Installation
+
+Clone the repository and install the required packages:
 
 ```bash
+git clone https://github.com/milanpm/01_ImageProcessing.git
+cd 01_ImageProcessing
 pip install -r requirements.txt
 ```
 
----
+## How to Run
 
-# How to Run
-
-Example
+Run an example from the repository root:
 
 ```bash
 python examples/01_Image_Basics/src/01_image_load.py
 ```
 
----
+Contour hierarchy example:
 
-# Learning Roadmap
+```bash
+python examples/08_Contours/src/10_contour_hierarchy.py
+```
 
-- [x] Image Load
-- [x] Image Information
-- [x] Image Save
-- [x] Color Space
-- [x] Histogram
-- [x] Average Blur
-- [x] Gaussian Blur
-- [x] Threshold
-- [x] Morphology
+## Learning Roadmap
 
-Upcoming
-
-- [ ] Edge Detection
-- [ ] Contours
+- [x] Image loading and information
+- [x] Image saving
+- [x] Color spaces
+- [x] Histograms
+- [x] Image filtering
+- [x] Thresholding
+- [x] Morphological operations
+- [x] Edge detection
+- [x] Contours and contour hierarchy
 - [ ] Hough Transform
 - [ ] Template Matching
 - [ ] Feature Matching
@@ -106,34 +104,28 @@ Upcoming
 - [ ] Machine Vision
 - [ ] Industrial Vision Project
 
----
+## Requirements
 
-# Requirements
+The main dependencies are listed in `requirements.txt`:
 
-```
+```text
 opencv-python
 numpy
 matplotlib
 ```
 
-or
+Install them with:
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
+## License
 
-# License
+This project is licensed under the MIT License.
 
-MIT License
+## Author
 
----
-
-# Author
-
-**Alex**
-
-Machine Vision Engineer
-
+**Alex**  
+Machine Vision Engineer  
 GitHub Portfolio Project
