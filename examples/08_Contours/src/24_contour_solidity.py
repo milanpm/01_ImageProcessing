@@ -1,3 +1,17 @@
+"""
+
+File Name: 24_contour_solidity.py
+
+Created: 2026.08.20
+
+Author: Alex
+
+Description:
+    Demonstrates how to calculate contour solidity by comparing
+    the contour area with its convex hull area.
+
+"""
+
 import cv2
 import numpy as np
 
