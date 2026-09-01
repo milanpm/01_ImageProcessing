@@ -1,27 +1,34 @@
 """
-Morphological Opening Example
+File: 03_opening.py
+Author: Alex
+Created: 2026-09-01
+Last Updated: 2026-09-01
 
-This example demonstrates how to apply morphological opening to a binary
-image using OpenCV.
+Description:
+    Demonstrates how to apply morphological opening to a binary image
+    using OpenCV.
 
-Morphological opening performs two operations in sequence:
+    Morphological opening performs two operations in sequence:
 
-    1. Erosion
-    2. Dilation
+        1. Erosion
+        2. Dilation
 
-Erosion first removes small white regions and shrinks foreground boundaries.
-Dilation then restores the main foreground objects close to their original
-size. As a result, opening is useful for removing small white noise while
-preserving larger objects.
+    Erosion first removes small white regions. Dilation then restores the
+    larger foreground structures that survived erosion. Opening is useful
+    for removing small white noise while preserving larger objects.
 
-Processing steps:
+Processing Steps:
     1. Load the source image.
     2. Convert the image to grayscale.
     3. Create a binary image using a threshold value of 127.
     4. Create a 5 x 5 rectangular kernel.
     5. Apply morphological opening with cv2.morphologyEx().
-    6. Count the foreground pixels removed by the operation.
-    7. Save and display the opening result.
+    6. Count the foreground pixels removed by opening.
+    7. Count all changed pixels.
+    8. Save and display the opening result.
+
+Input:
+    images/sample.png
 
 Output:
     outputs/06_Morphology/opening_5x5.png
