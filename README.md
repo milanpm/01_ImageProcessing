@@ -51,7 +51,7 @@ The goal is not only to write example code, but also to build a structured under
 | `03_Histogram` | Histogram calculation and visualization |
 | `04_Filtering` | Average blur and Gaussian blur |
 | `05_Threshold` | Binary thresholding |
-| `06_Morphology` | Erosion, dilation, opening, closing, morphological gradient, Top-Hat, and Black-Hat transformations |
+| `06_Morphology` | Erosion, dilation, opening, closing, morphological gradient, Top-Hat, Black-Hat, and morphological kernel shape comparison |
 | `07_Edge_Detection` | Edge detection techniques |
 | `08_Contours` | Contour detection, area, perimeter, approximation, centroid, hierarchy, extreme points, and alignment analysis |
 
@@ -96,6 +96,12 @@ Black-Hat transformation example:
 
 ```bash
 python examples/06_Morphology/src/07_black_hat.py
+```
+
+Morphological kernel shape comparison example:
+
+```bash
+python examples/06_Morphology/src/08_compare_kernel_shapes.py
 ```
 
 Centroid and extreme-point alignment example:
