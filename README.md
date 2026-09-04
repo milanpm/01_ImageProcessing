@@ -53,7 +53,7 @@ The goal is not only to write example code, but also to build a structured under
 | `05_Threshold` | Binary thresholding |
 | `06_Morphology` | Erosion, dilation, opening, closing, morphological gradient, Top-Hat, and Black-Hat transformations |
 | `07_Edge_Detection` | Edge detection techniques |
-| `08_Contours` | Contour detection, area, perimeter, approximation, centroid, and hierarchy |
+| `08_Contours` | Contour detection, area, perimeter, approximation, centroid, hierarchy, extreme points, and alignment analysis |
 
 ## Development Environment
 
@@ -96,6 +96,12 @@ Black-Hat transformation example:
 
 ```bash
 python examples/06_Morphology/src/07_black_hat.py
+```
+
+Centroid and extreme-point alignment example:
+
+```bash
+python examples/08_Contours/src/33_centroid_extreme_alignment.py
 ```
 
 ## Learning Roadmap
