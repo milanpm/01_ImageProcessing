@@ -53,7 +53,7 @@ The goal is not only to write example code, but also to build a structured under
 | `05_Threshold` | Binary thresholding |
 | `06_Morphology` | Erosion, dilation, opening, closing, morphological gradient, Top-Hat, Black-Hat, and morphological kernel shape comparison |
 | `07_Edge_Detection` | Edge detection techniques |
-| `08_Contours` | Contour detection, area, perimeter, approximation, centroid, hierarchy, extreme points, and alignment analysis |
+| `08_Contours` | Contour detection, area, perimeter, approximation, centroid, hierarchy, extreme points, alignment analysis, and center comparison |
 
 ## Development Environment
 
@@ -108,6 +108,12 @@ Centroid and extreme-point alignment example:
 
 ```bash
 python examples/08_Contours/src/33_centroid_extreme_alignment.py
+```
+
+Contour center comparison example:
+
+```bash
+python examples/08_Contours/src/34_contour_center_comparison.py
 ```
 
 ## Learning Roadmap
