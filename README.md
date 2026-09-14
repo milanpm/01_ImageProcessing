@@ -122,6 +122,20 @@ Contour center comparison example:
 python examples/08_Contours/src/34_contour_center_comparison.py
 ```
 
+Center alignment inspection example (Day 48):
+
+Compares the contour centroid with a reference position and checks
+whether the Euclidean distance is within a 20 px tolerance.
+Positive dx means right; positive dy means down.
+
+- Normal position: dx=+10 px, dy=-5 px, distance=11.18 px → PASS
+- Shifted position: dx=+45 px, dy=+25 px, distance=51.48 px → FAIL
+- PASS condition: distance <= tolerance
+
+```bash
+python examples/08_Contours/src/35_center_alignment_inspection.py
+```
+
 ## Learning Roadmap
 
 - [x] Image loading and information
