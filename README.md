@@ -1,3 +1,16 @@
+<!--
+===============================================================================
+File: README.md
+Project: 01_ImageProcessing
+Topic: Project Overview and Usage
+Description:
+    Document the project structure, examples, setup, and learning roadmap.
+Author: Alex
+Created Date: Unknown
+Last Modified: 2026-10-19
+===============================================================================
+-->
+
 # 01_ImageProcessing
 
 > A hands-on Digital Image Processing and Machine Vision portfolio project built with Python and OpenCV.
@@ -53,7 +66,7 @@ The goal is not only to write example code, but also to build a structured under
 | `05_Threshold` | Binary thresholding |
 | `06_Morphology` | Erosion, dilation, opening, closing, morphological gradient, Top-Hat, Black-Hat, and morphological kernel shape and size comparisons |
 | `07_Edge_Detection` | Edge detection techniques |
-| `08_Contours` | Contour detection, area, perimeter, approximation, centroid, hierarchy, extreme points, alignment analysis, and center comparison |
+| `08_Contours` | Contour detection, area, perimeter, approximation, centroid, hierarchy, extreme points, alignment analysis, center comparison, position/rotation/size inspection, failure reason reporting, and CSV reports |
 
 ## Development Environment
 
@@ -136,6 +149,51 @@ Positive dx means right; positive dy means down.
 python examples/08_Contours/src/35_center_alignment_inspection.py
 ```
 
+Position and rotation alignment inspection example (Day 50):
+
+Checks the object's center position and long-side orientation against
+reference values.
+
+```bash
+python examples/08_Contours/src/37_position_rotation_alignment_inspection.py
+```
+
+Position, rotation, and size inspection example:
+
+Combines position, rotation, and size checks into an overall decision.
+All inspection items must pass for the object to receive PASS.
+
+```bash
+python examples/08_Contours/src/39_position_rotation_size_inspection.py
+```
+
+Inspection failure reason reporting example (Day 53):
+
+Reports all failed inspection items as POSITION, ANGLE, or SIZE.
+Objects that pass all checks display NONE.
+
+```bash
+python examples/08_Contours/src/40_inspection_failure_reasons.py
+```
+
+Inspection CSV report example (Day 54):
+
+Saves measurements, individual decisions, the overall decision, and
+failure reasons for three sample objects.
+
+```bash
+python examples/08_Contours/src/41_inspection_csv_report.py
+```
+
+Report location:
+
+```text
+examples/08_Contours/output/day54_inspection_report.csv
+```
+
+The output directory is created automatically. Each run overwrites the
+report using UTF-8 with BOM for Excel compatibility.
+
 ## Learning Roadmap
 
 - [x] Image loading and information
@@ -147,6 +205,9 @@ python examples/08_Contours/src/35_center_alignment_inspection.py
 - [x] Morphological operations
 - [x] Edge detection
 - [x] Contours and contour hierarchy
+- [x] Position, rotation, and size inspection
+- [x] Inspection failure reason reporting
+- [x] Inspection CSV reports
 - [ ] Hough Transform
 - [ ] Template Matching
 - [ ] Feature Matching
