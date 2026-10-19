@@ -1,0 +1,4 @@
+﻿name,center_x,center_y,angle_deg,long_side_px,short_side_px,position_error_px,angle_error_deg,long_error_px,short_error_px,position_result,angle_result,size_result,overall_result,failure_reasons
+Normal Object,209.50,214.50,14.04,151.10,80.28,10.98,4.04,1.10,0.28,PASS,PASS,PASS,PASS,NONE
+Misaligned Object,244.50,244.50,34.99,151.15,80.37,50.80,24.99,1.15,0.37,FAIL,FAIL,PASS,FAIL,"POSITION, ANGLE"
+Wrong Size Object,209.50,214.50,13.82,181.48,81.47,10.98,3.82,31.48,1.47,PASS,PASS,FAIL,FAIL,SIZE
