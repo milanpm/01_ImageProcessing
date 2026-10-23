@@ -7,7 +7,7 @@ Description:
     Document the project structure, examples, setup, and learning roadmap.
 Author: Alex
 Created Date: Unknown
-Last Modified: 2026-10-19
+Last Modified: 2026-10-23
 ===============================================================================
 -->
 
@@ -66,7 +66,7 @@ The goal is not only to write example code, but also to build a structured under
 | `05_Threshold` | Binary thresholding |
 | `06_Morphology` | Erosion, dilation, opening, closing, morphological gradient, Top-Hat, Black-Hat, and morphological kernel shape and size comparisons |
 | `07_Edge_Detection` | Edge detection techniques |
-| `08_Contours` | Contour detection, area, perimeter, approximation, centroid, hierarchy, extreme points, alignment analysis, center comparison, position/rotation/size inspection, failure reason reporting, and CSV reports |
+| `08_Contours` | Contour detection, area, perimeter, approximation, centroid, hierarchy, extreme points, alignment analysis, center comparison, position/rotation/size inspection, failure reason reporting, CSV reports, and CSV summary statistics |
 
 ## Development Environment
 
@@ -194,6 +194,32 @@ examples/08_Contours/output/day54_inspection_report.csv
 The output directory is created automatically. Each run overwrites the
 report using UTF-8 with BOM for Excel compatibility.
 
+Inspection CSV summary example (Day 55):
+
+Reads the Day 54 CSV report using csv.DictReader and summarizes total
+objects, PASS/FAIL counts, the pass rate, and individual failure reasons.
+Generate the Day 54 report before running this example.
+
+```bash
+python examples/08_Contours/src/42_inspection_csv_summary.py
+```
+
+Expected summary for the three sample objects:
+
+| Metric | Value |
+|---|---:|
+| Total objects | 3 |
+| PASS objects | 1 |
+| FAIL objects | 2 |
+| Pass rate | 33.33% |
+| POSITION failures | 1 |
+| ANGLE failures | 1 |
+| SIZE failures | 1 |
+| Total failure reasons | 3 |
+
+One failed object can have multiple failure reasons, so the total number
+of failure reasons can exceed the number of failed objects.
+
 ## Learning Roadmap
 
 - [x] Image loading and information
@@ -208,6 +234,7 @@ report using UTF-8 with BOM for Excel compatibility.
 - [x] Position, rotation, and size inspection
 - [x] Inspection failure reason reporting
 - [x] Inspection CSV reports
+- [x] Inspection CSV summary statistics
 - [ ] Hough Transform
 - [ ] Template Matching
 - [ ] Feature Matching
