@@ -13,12 +13,13 @@ Learning Objectives:
     - Calculate the pass rate and count individual failure reasons.
 Author: Alex
 Created Date: 2026-10-23
-Last Modified: 2026-10-23
+Last Modified: 2026-11-10
 ===============================================================================
 """
 
 import csv
 from collections import Counter
+from itertools import combinations
 from pathlib import Path
 
 
@@ -26,6 +27,7 @@ def summarize_inspection_csv(report_path):
     """Read a CSV report and return inspection summary statistics."""
     result_counts = Counter()
     reason_counts = Counter()
+    pair_counts = Counter()
 
     with Path(report_path).open(
         "r",
@@ -56,6 +58,7 @@ def summarize_inspection_csv(report_path):
                     if reason.strip() and reason.strip() != "NONE"
                 }
                 reason_counts.update(reasons)
+                pair_counts.update(combinations(sorted(reasons), 2))
 
     total_count = sum(result_counts.values())
     pass_count = result_counts["PASS"]
@@ -68,6 +71,7 @@ def summarize_inspection_csv(report_path):
         "fail_count": fail_count,
         "pass_rate": pass_rate,
         "reason_counts": reason_counts,
+        "pair_counts": pair_counts,
     }
 
 
